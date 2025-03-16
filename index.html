@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Anek+Bangla:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        font-family: "ADLaM Display", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="hidden px-8 py-3 justify-between bg-gray-200 border-b-1">
+      <div class="flex gap-1 items-center">
+        English
+        <img src="./assets/logo.png" alt="logo" />
+        জানালা
+      </div>
+      <div>
+        <a href="#faq" class="btn btn-outline btn-primary">
+          <i class="fa-solid fa-circle-question" style="color: #4400ff"></i>FAQ
+        </a>
+        <a href="#learn" class="btn btn-outline btn-primary">
+          <i class="fa-solid fa-book-open" style="color: #4400ff"></i>Learn
+        </a>
+        <button class="btn btn-outline btn-primary">
+          <i class="fa-solid fa-right-from-bracket" style="color: #4400ff"></i
+          >Logout
+        </button>
+      </div>
+    </nav>
+    <div class="hero flex items-center px-8">
+      <div class="w-1/2">
+        <h1 class="text-4xl mb-4">
+          <span class="text-blue-500">English</span> is Easy!!
+        </h1>
+        <p>
+          আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+          আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
+          অন্য একটি Level এ
+        </p>
+        <form id="login-form" class="flex flex-col gap-3 w-56 mt-8">
+          <input
+            class="rounded border-gray-300 text-xs p-2"
+            type="text"
+            placeholder="Enter Your Name"
+            required
+          />
+          <input
+            id="pass"
+            class="rounded border-gray-300 text-xs p-2"
+            type="password"
+            placeholder="-------"
+            required
+          />
+          <button class="btn btn-primary w-32" type="submit">
+            Get Started
+          </button>
+        </form>
+      </div>
+      <div class="w-1/2">
+        <img src="./assets/hero-student.png" alt="hero" />
+      </div>
+    </div>
+    <div class="hidden mt-12 px-8" id="learn">
+      <h1 class="text-2xl mb-12 text-center">
+        <span class="text-blue-500">Let's</span> Learn Vocabularies
+      </h1>
+      <div class="mx-auto w-max">
+        <button class="btn btn-outline btn-primary">
+          <i class="fa-solid fa-book-open" style="color: #4400ff"></i>Lesson-1
+        </button>
+      </div>
+      <div class="bg-gray-100 rounded p-6 mt-8">
+        <div class="bg-white rounded text-center p-4">
+          <div class="mb-8">
+            <p>Eager</p>
+            <p class="text-sm">Eager</p>
+            <p class="text-slate-400">Eager</p>
+          </div>
+          <div class="flex justify-between px-12">
+            <button
+              class="bg-gray-200 rounded px-2 py-1"
+              onclick="my_modal_1.showModal()"
+            >
+              <i class="fa-solid fa-circle-info"></i>
+            </button>
+            <dialog id="my_modal_1" class="modal">
+              <div class="modal-box text-left">
+                <h2>Eager</h2>
+                <p>meaning</p>
+                <p>meaning</p>
+                <p>Example</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis, explicabo.
+                </p>
+                <p>similar</p>
+                <p class="bg-blue-100 rounded px-2 py-1 text-sm w-max">
+                  egdajf
+                </p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn btn-primary">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+            <button class="bg-gray-200 rounded px-2 py-1">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden mt-8 px-8" id="faq">
+      <h1 class="text-2xl mb-12 text-center">
+        <span class="text-blue-500">Frequently</span> Asked Questions
+      </h1>
+      <div>
+        <div>
+          <div
+            class="mb-2 collapse collapse-plus bg-gray-100 border border-base-300"
+          >
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title font-semibold">
+              How do I create an account?
+            </div>
+            <div class="collapse-content text-sm">
+              Click the "Sign Up" button in the top right corner and follow the
+              registration process.
+            </div>
+          </div>
+          <div
+            class="mb-2 collapse collapse-plus bg-gray-100 border border-base-300"
+          >
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">
+              I forgot my password. What should I do?
+            </div>
+            <div class="collapse-content text-sm">
+              Click on "Forgot Password" on the login page and follow the
+              instructions sent to your email.
+            </div>
+          </div>
+          <div
+            class="mb-2 collapse collapse-plus bg-gray-100 border border-base-300"
+          >
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">
+              How do I update my profile information?
+            </div>
+            <div class="collapse-content text-sm">
+              Go to "My Account" settings and select "Edit Profile" to make
+              changes.
+            </div>
+          </div>
+          <div
+            class="mb-2 collapse collapse-plus bg-gray-100 border border-base-300"
+          >
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">
+              How do I update my profile information?
+            </div>
+            <div class="collapse-content text-sm">
+              Go to "My Account" settings and select "Edit Profile" to make
+              changes.
+            </div>
+          </div>
+          <div
+            class="mb-2 collapse collapse-plus bg-gray-100 border border-base-300"
+          >
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">
+              How do I update my profile information?
+            </div>
+            <div class="collapse-content text-sm">
+              Go to "My Account" settings and select "Edit Profile" to make
+              changes.
+            </div>
+          </div>
+          <div
+            class="mb-2 collapse collapse-plus bg-gray-100 border border-base-300"
+          >
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">
+              How do I update my profile information?
+            </div>
+            <div class="collapse-content text-sm">
+              Go to "My Account" settings and select "Edit Profile" to make
+              changes.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="hidden mt-12 px-8 pt-12 border-t-1 justify-between items-center"
+    >
+      <div>
+        <div class="flex gap-1 items-center mb-2">
+          English
+          <img src="./assets/logo.png" alt="logo" />
+          জানালা
+        </div>
+        <p>ইংরেজি শিখুন সহজে</p>
+        <p class="mb-4">Providing ED-Tech Applications since 2025</p>
+      </div>
+      <div>
+        <p>FOLLOW US</p>
+        <div>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./api.js"></script>
+  </body>
+</html>
